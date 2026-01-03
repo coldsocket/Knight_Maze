@@ -300,7 +300,7 @@ class Wall (Object, CollidableObject, SpriteObject):
 
     def __init__(self, name: str, position: g.Vector2 | tuple[float, float], w: float, h: float, color: tuple[int, int, int]):
         super().__init__()
-        self.set_metadata(Object.TYPE_STTINV_WALL, name)
+        self.set_metadata(Object.TYPE_WALL, name)
         self.position.update(position)
         img = alpha_Surface((w, h))
         img.fill(color)
@@ -1357,7 +1357,7 @@ maze1_schm = MazeMaker.load_mask("maze1.png")
 maze2_schm = MazeMaker.load_mask("maze2.png")
 maze_schm = MazeMaker.load_mask("MazeXXX.png")
 
-maze_schms = (maze_schm)
+maze_schms = (maze_schm,)
 
 
 sheet_equip_sword = bite_img(rk_ssh_png, g.Rect(8, 130, 2408, 127), "srcalpha")
