@@ -256,7 +256,7 @@ class CollidableObject:
         collider.coll_handler (collider, self, handled)
 
     def render_hitbox (self, dest: g.Surface):
-        g.draw.lines(dest, (128, 30, 20), True, self.hitbox.vertices, 5)
+        g.draw.lines(dest, (128, 30, 20), True, self.hitbox.vertices, 2)
 
 class SpriteObject:
 
@@ -1357,7 +1357,7 @@ maze1_schm = MazeMaker.load_mask("maze1.png")
 maze2_schm = MazeMaker.load_mask("maze2.png")
 maze_schm = MazeMaker.load_mask("MazeXXX.png")
 
-maze_schms = (maze_schm,)
+maze_schms = (maze1_schm, maze2_schm)
 
 
 sheet_equip_sword = bite_img(rk_ssh_png, g.Rect(8, 130, 2408, 127), "srcalpha")
