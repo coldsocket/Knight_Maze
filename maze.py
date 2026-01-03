@@ -1329,12 +1329,12 @@ class Settings:
 
 knight_ogg = load_snd("knight.ogg", 0.10)
 
-hurt_wav = load_snd("snd_hurt1.wav", 0.5)
-heal_wav = load_snd("snd_power.wav", 0.5)
+hurt_wav = load_snd("snd_hurt1.wav", 0.2)
+heal_wav = load_snd("snd_power.wav", 0.2)
 
-swing_wav = load_snd("snd_swing.wav", 0.5)
-swingsmall_wav = load_snd("snd_smallswing.wav", 0.5)
-swingheavy_wav = load_snd("snd_heavyswing.wav", 0.5)
+swing_wav = load_snd("snd_swing.wav", 0.2)
+swingsmall_wav = load_snd("snd_smallswing.wav", 0.2)
+swingheavy_wav = load_snd("snd_heavyswing.wav", 0.2)
 
 treasure = g.transform.scale(load_img("treasure.png", "srcalpha"), (40, 40))
 soul_png = load_img("soul.png", "srcalpha")
